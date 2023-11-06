@@ -1,0 +1,263 @@
+:root {
+  --primar: #4c7a39;
+  --bg: #fdfff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "karla", sans-serif;
+  background-color: var(--bg);
+  color: #4c7a39;
+}
+
+/* navbar */
+
+.navbar .brand {
+  align-items: center;
+  display: flex;
+}
+
+.navbar .nav-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .brand h2 {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(253, 255, 240);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .nav-navbar a {
+  color: #4c7a39;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 2rem;
+}
+
+.navbar .nav-navbar a:hover {
+  color: #fdfff1;
+  background-color: #4c7a39;
+  border-radius: 30px;
+  padding: 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about {
+  color: #fdfff1 !important;
+  background-color: #4c7a39;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+/* navbar end */
+
+/* section */
+.text-content {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-content .h2 {
+  font-size: 50px;
+  font-family: "Lobster", sans-serif;
+  font-weight: bold;
+}
+
+.isi {
+  font-family: "karla", sans-serif;
+  width: 700px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* section end */
+
+/* pie chart */
+.b-skills {
+  background-color: #4c7a39;
+  color: #fdfff1;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 30px;
+  margin: auto;
+  font-family: "karla", sans-serif;
+}
+
+.row {
+  display: flex;
+  padding: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-item p {
+  justify-content: space-between;
+  display: flex;
+  margin-left: 30px;
+}
+
+.chart-container {
+  position: relative;
+}
+
+.skill-item {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #fdfff1;
+}
+
+.chart-character {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.skill-item .chart:before,
+.skill-item .percent {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skill-item .percent {
+  position: relative;
+  line-height: 1;
+  font-size: 40px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.skill-item .percent:after {
+  content: attr(data-after);
+  font-size: 20px;
+}
+
+p {
+  font-weight: 900;
+}
+
+/* pie chart end */
+
+/* Artikel */
+.img-wrapper {
+  max-width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+  }
+}
+
+.carousel-inner {
+  padding: 1rem;
+}
+.card {
+  margin: 0 0.5em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 6vh;
+  height: 6vh;
+  background-color: #d3df8f;
+border-radius: 50%;
+top: 50%;
+transform: translateY(-50%);
+opacity: .5;
+}
+
+.carousel-control-prev,
+.carousel-control-next:hover{
+  opacity: .8;
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
