@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-color: #FDFFF1;
+    /* background-image: linear-gradient(100deg,#fafee2 0%, #e2fcbf 50%); */
+}
+::selection{
+    background: #4C7A39;
+    color: #FDFFF1;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -50px;
+  height: 100px;
+}
+.navbar .rignt-nav{
+  color:#4C7A39;
+}
+.wrapper{
+    margin-top: -100px;
+    overflow: hidden;
+    color: #FDFFF1;
+    width: 400px;
+    height: 550px;
+    background: #4C7A39;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: rgb(7, 54, 5) 0px 20px 30px -10px;
+    z-index: 2;
+}
+.wrapper .title-text{
+    display: flex;
+    width: 200%;
+    margin-top: 30px;
+}
+.wrapper .title{
+    width: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #E1EBAE;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.slide-controls{
+    position: relative;
+    display: flex;
+    height: 20px;
+    /* overflow: hidden; */
+    justify-content: space-between;
+}
+.slide-controls .slide{
+    margin: 0px;
+    color: #4C7A39;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.slide-controls label .signup{
+    color:#9BC76E;
+}
+.slide-controls .slide-tab{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #9BC76E;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.signup-link {
+    color: #E1EBAE;
+    font-size: 15px;
+}
+
+input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #E1EBAE;
+    cursor: default;
+    /* user-select: none; */
+    background-color: #4C7A39;
+    border-radius: 5px;
+    padding: 0 10px 0;
+  }
+  #signup:checked ~ label.login{
+    color: #4C7A39;
+  }
+  #login:checked ~ label.signup{
+    color: #4C7A39;
+  }
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+    background-color: #4C7A39;
+    color: #E1EBAE;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner{
+    display: flex;
+    width: 200%;
+  }
+  .form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-inner form .field input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    padding: 0 15px 0;
+    border-radius: 20px;
+    box-shadow: 1px 2px 0px 0px rgba(222, 222, 222, 0.25) inset;
+    border-bottom-width: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #E1EBAE;
+  }
+  .form-inner form .field input::placeholder{
+    color: #9a9e82;
+    transition: all 0.3s ease;
+  }
+  .form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+    text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .btn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    border-radius: 15px;
+    transition: all 0.4s ease;;
+  }
+  form .btn:hover .btn-layer{
+    left: 0;
+  }
+  form .btn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .btn-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    
+  } 
+.gambar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 115px;
+}
+.footer-contain{
+        position: absolute;
+        bottom: 0;
+        height: 123px;
+        width: 100%;
+        background-color: #69A452;
+}
