@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;800&family=Koh+Santepheap:wght@300&family=Lobster+Two:ital@1&display=swap');
+:root {
+    --primar: #4c7a39;
+    --bg: #fdfff1;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "karla", sans-serif;
+    background-color: var(--bg);
+    color: #4c7a39;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(253, 255, 240);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .nav-navbar a {
+    color: #4c7a39;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 2rem;
+  }
+  
+  .navbar .nav-navbar a:hover {
+    color: #fdfff1;
+    background-color: #4c7a39;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about {
+    color: #fdfff1 !important;
+    background-color: #4c7a39;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: default;
+  }
+  
+  .navbar .navbar-ekstra a {
+    color: var(--primar);
+  }
+  
+  section {
+    margin: 100px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  .kolom {
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    font-family: "karla", sans-serif;
+    font-size: 50px;
+    font-style: 800;
+  }
+  
+  .deskripsi {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .gambar {
+    max-width: 100%;
+    margin-left: 300px;
+  }
+  
+  button {
+    background-color: #4c7a39;
+    color: #fdfff1;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: #fdfff1;
+  }
+  
+  /* media queries */
+  
+  /* laptop */
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  /* tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+  }
+  
+  /* mobile phone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }

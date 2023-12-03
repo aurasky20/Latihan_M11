@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Koh+Santepheap:wght@300&family=Lobster+Two:ital@1&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+.body {
+    background-color: rgb(253, 255, 240);
+    
+}
+
+/* navbar */
+.h2{
+  color: #4c7a39;
+}
+
+.navbar .brand {
+    align-items: center;
+    display: flex;
+  }
+  
+  .navbar .nav-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar .brand h2 {
+    font-size: 24px;
+    margin-left: 15px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7% ;
+    background-color: rgb(253, 255, 240);
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar .nav-navbar a {
+    color: #4c7a39;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 2rem;
+  }
+  
+  .navbar .nav-navbar a:hover {
+    color: rgb(253, 255, 240);
+    background-color: #4c7a39;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* profile overlay */
+  .profile-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .user-pic{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-width: 0;
+    overflow: hidden;
+    transition:  max-height 0.5s;
+  }
+  .sub-menu-wrap.open-menu{
+    max-width: 400px;
+  }
+  .sub-menu{
+    background: #fffff6;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 2px 2px 4px 2px rgba(63, 94, 31, 0.20);
+    border-radius: 20px;
+  }
+  .user-info{
+    display: flex;
+    align-items: center;
+  }
+  .user-info h3{
+    font-weight: bold;
+  }
+  .user-info img{
+    width: 60px;
+    margin-right: 15px;
+  }
+  .sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+  }
+  .sub-menu-wrap .sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4C7A39;
+  }
+  .sub-menu-link p{
+    width: 100%;
+    font-weight: 200;
+  }
+  .sub-menu-link img{
+    width: 30px;
+    padding: 8px;
+    margin-right: 15px;
+  }
+  .sub-menu-link p:hover{
+    font-weight: 600;
+  }
+
+/*Judul*/
+  .title {
+    color: #4C7A39;
+    font-size: 40px;
+    font-family: Koh Santepheap;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 50px 0 50px;
+  }
+
+/*Galeri*/
+.container {
+    /* max-width: 1224px; */
+    width: 100%;
+    margin: 0 50px;
+    display: contents;
+    flex-direction: column;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+    margin: 0 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* @media (max-width:768px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+} */
+
+/* footer */
+.footer-contain{ 
+  height: 250px;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #69A452;
+  border-radius: 90px 90px 0 0;
+  
+}
+
+table {
+  position: absolute;
+  margin: 40px 100px ;
+  
+}
+
+table, th, td {
+  padding: 5px 150px 0 25px;
+  border-left: 2px solid #FEFFF6;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table td a{
+  font-size: 18px;
+  color: #FEFFF6;
+  text-decoration: none;
+}
+
+table th a{
+  color: #E1EBAE;
+  font-size: 30px;
+  text-decoration: none;
+  margin-bottom: 100px;
+}
+
+table td img{
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+table td .contact{
+  display: flex;
+  align-items: center;
+}
+
+table td a img{
+  margin: 0 15px 0 0;
+}
+
+.footer-copyright a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  background: #4C7A39;
+  color: #E1EBAE;
+  font-size: 15px;
+  cursor: default;
+}
+
+/* footer end */
